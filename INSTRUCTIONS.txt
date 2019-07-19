@@ -1,0 +1,27 @@
+=========================
+INSTRUCTIONS
+=========================
+1) Ensure you have following files:
+    - HTTPSCert.jar
+    - httpsconfig.sh
+    - settings.properties
+
+2) Set the working Tomcat directory in 'settings.properties' file for appropriate OS.
+
+3) Run command 'chmod 755 httpsconfig.sh'
+
+4) Run httpsconfig.sh to setup with default Keytool, use -h flag for more options.
+
+5) Run Tomcat.
+
+=========================
+FLAGS
+=========================
+-a [jar] [fully qualified classname], --add-jar;;  
+    Allows you to use an external jar to set up https. 
+    Must be followed by jar file name, then fully qualified class name.
+
+-s [tool], --select;; 
+    Allows you to select an available tool followed by keywords "KT" (for Keytool) or "BC" (for BouncyCastle.
+
+-h, --help;;
